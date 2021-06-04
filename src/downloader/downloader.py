@@ -9,7 +9,7 @@ class Downloader:
 
         try:
             # Downloading the video
-            YouTube(url).streams.order_by('resolution').desc().first().download("data/videos")
+            YouTube(url).streams.order_by('resolution').desc().first().download("data/videos", "vid")
 
         except:
             print(f"Could not download video: {url}")
@@ -22,7 +22,9 @@ class Downloader:
         # Fetches all Videos
         urls = open("src/downloader/urls.txt", "r").readlines()
 
+
+        # TODO: Ensure Video URLS are correct
         print(f"Videos: {urls}")
 
         # TODO: Exchange this for actual videos
-        return self._download_video("https://www.youtube.com/watch?v=e69XZJ9DEj0")
+        return self._download_video("https://www.youtube.com/watch?v=L_UPHsGR6fM")
