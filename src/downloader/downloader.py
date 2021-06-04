@@ -1,3 +1,5 @@
+import os
+
 from pytube import YouTube
 from pytube.exceptions import *
 
@@ -5,11 +7,14 @@ class Downloader:
 
     def _download_video(self, url: str) -> bool:
 
-        print(f"Downloadig video: {url}")
-
         try:
             # Downloading the video
-            YouTube(url).streams.order_by('resolution').desc().first().download("data/videos", "vid")
+            streams = YouTube(url).streams.order_by('resolution').filter(mime_type="video/webm").desc()
+
+            for s in streams:
+                print(s)
+
+            streams.first().download("data/videos", "vid")
 
         except:
             print(f"Could not download video: {url}")
