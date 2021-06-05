@@ -38,7 +38,7 @@ class Importer:
 
             if foundFrame:
                 img = plt.imshow(frame)
-                plt.show()
+                plt.savefig("Test.png")
             else:
                 break
         
