@@ -15,7 +15,7 @@ class Importer:
         """Loads the coordinates"""
 
         # Reading coordinates, removing everything but numbers as well as player id
-        coordinates = open("src\downloading\coordinates.txt", "r").readlines()
+        coordinates = open("src/downloading/coordinates.txt", "r").readlines()
         coordinates = [re.sub("[^0-9]", "", c) for c in coordinates]
         coordinates = [int(c[1:]) for c in coordinates if c]
 
