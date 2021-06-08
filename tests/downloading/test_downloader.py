@@ -1,6 +1,6 @@
 import unittest
 
-from src.downloader.downloader import Downloader
+from src.downloading.downloader import Downloader
 
 
 class Test_Downloader(unittest.TestCase):

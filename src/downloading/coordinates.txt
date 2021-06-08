@@ -1,0 +1,20 @@
+Player 1 game start x:          610
+Player 1 game start y:          275
+Player 1 game end   x:          925
+Player 1 game end   y:          895
+
+Player 2 game start x:          1000
+Player 2 game start y:          275
+Player 2 game end   x:          1312
+Player 2 game end   y:          895
+
+Player 1 name start x:          620
+Player 1 name start y:          915
+Player 1 name end   x:          910
+Player 1 name end   y:          953
+
+Player 2 name start x:          1010
+Player 2 name start y:          915
+Player 2 name end   x:          1290
+Player 2 name end   y:          950
+

@@ -25,7 +25,7 @@ class Downloader:
     def download_videos(self) -> bool:
         
         # Fetches all Videos
-        urls = open("src/downloader/urls.txt", "r").readlines()
+        urls = open("src/downloading/urls.txt", "r").readlines()
 
 
         # TODO: Ensure Video URLS are correct
